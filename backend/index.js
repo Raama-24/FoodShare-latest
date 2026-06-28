@@ -16,7 +16,7 @@ const db = admin.firestore();
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: ["http://localhost:5173", "https://foodshare-latest.onrender.com"],
   methods: ["GET", "POST"],
   credentials: true,
 }));
